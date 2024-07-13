@@ -1,0 +1,795 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+} 
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 1.4rem;
+    padding-top: 0%;
+}
+
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px; 
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  form.example{
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner{
+    height: 200px;
+    min-height: 50px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 50%;
+    background-attachment: fixed;
+}
+
+.menu_img{
+    border-radius: 100%;
+}
+
+header .banner{ 
+    background: url(images/banner_background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+}
+
+nav{
+    overflow: hidden;
+    /* position: sticky; */
+    z-index: 0;
+    top: 0; 
+    width: 100%;
+}
+
+.home_img{
+    overflow: hidden;
+    z-index: 0;
+    top: 0; 
+    width: 100%;
+}
+
+footer,nav {
+    display: flex;
+    /* overflow: hidden; */
+    background-color: #333;
+}
+
+footer a,nav a {
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+footer a:hover, nav a:hover{
+    background-color: white;
+    color: tomato;
+}
+
+h1,h2,section#rahul,footer{
+    text-align: center;
+}
+
+section{
+    padding-top: 25px;
+    /* background-color: #333; */
+}
+
+section h1 span{
+    background-color: rgb(170, 170, 59);
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+}
+
+section h2 span{
+    color: black;
+}
+
+/* ch-6 se har ak item ke liye */
+
+.flex-container-1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content:top;
+}
+
+.class1,.class3{
+    text-align: center;
+    background-color: lightblue;
+    width: 25%;
+    height: 520px;
+    margin: 4%;
+    border-radius: 5px;
+    padding: 10px;
+    /* position: relative; */
+}
+
+.class2{
+    text-align: center;
+    background-color: lightpink;
+    width: 25%;
+    height: 520px;
+    margin: 4%;
+    border-radius: 5px;
+    top: -30px;
+    padding: 10px;
+    /* position: relative; */
+}
+
+.class1 img,.class2 img,.class3 img,.class4 img,.class5 img{
+    margin: 5px;
+    width: 100%;
+    height: 200px;
+}
+
+.class4 img,.class5 img{
+    width: 100%;
+    height: 150px;
+}
+
+.class1 a,.class2 a, .class3 a,.class4 a,.class5 a{
+    background-color: rgb(88, 68, 68);
+    font-weight: bold;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 2px;
+    /* top: 15px; */
+}
+
+.class1:hover,.class2:hover,.class3:hover,.class4:hover,.class5:hover{
+    transform: scale(1.06);
+    transition: all 0.3s;
+}
+
+.class1 a:hover,.class2 a:hover,.class3 a:hover,.class4 a:hover,.class5 a:hover{
+    color: red;
+}
+
+.class4,.class5{
+    text-align: center;
+    background-color: lightblue;
+    width: 23%;
+    height: 460px;
+    margin: 1%;
+    margin-top: 2%;
+    border-radius: 5px;
+    /* position: relative; */
+    top: -30px;
+    padding: 10px;
+}
+
+.class5{
+    background-color: lightpink;
+}
+
+
+.flex-container-2{
+    display:flexbox;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content:top;
+}
+
+.box1{
+    margin-left: 10%;
+    margin-right: 2%;
+}
+
+.box2{
+    margin-right: 10%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+#box0{
+    float: left;
+    margin: 10px;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    background-color: lightblue;
+    padding: 2px;
+}
+#box1{
+    float: right;
+    margin: 10px;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    background-color: lightblue;
+    padding: 2px;
+}
+#p1{
+    background: rgb(180, 185, 186);
+    border-radius: 6px;
+    padding: 10px;
+}
+#p0{
+    background: rgb(180, 185, 186);
+    border-radius: 6px;
+    padding: 10px;
+}
+#p0,#p1{
+    font-size: 30px;
+}
+
+.for_review{
+    background: url(images/review.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top center;
+}
+
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    width: 80%;
+    height: 100%;
+    margin: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-position: center;
+}
+
+review_form.input[type="text"], review_form.input[type="email"], select, textarea{
+    width: 50%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+review_form.fieldset{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+review_form.input[type="submit"]{
+    background-color: #4daea1;
+    color: white;
+    padding: 100px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+review_form.input[type="submit"]:hover{
+    background-color: #4caf84;
+}
+
+section:nth-child(even){
+    background-color: #45a2ab;
+}
+
+section:nth-child(odd){
+    background-color: whitesmoke;
+}
+
+img{
+    padding: 0px 20px;
+}
+
+
+section h5{
+    margin: 0px 130px;
+}
+
+.flex-align-right{
+    margin-left: auto;
+}
+
+.profile_img{
+    background-position: center;
+    border-radius: 20%;
+    padding: 30px;
+    width: 50%;
+    height: 50%;
+}
+
+.profile_name{
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    margin: 20px 0px 30px 0px;
+}
+
+.sm-handle a{
+    background-color: rgb(125 125 125 / 25%);
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin: 5px 10px;
+    text-decoration: none;
+    font-size: 1.20em;
+}
+
+.sm-handle a:hover{
+    background-color: rgb(30 30 30 / 25%);
+}
+
+.sm-handle a i{
+    margin: 5px;
+}
+
+.yt_handle{
+    color: #ff0000;
+}
+.insta_handle{
+    color: #0c76a8;
+}
+.link_handle{
+    color: #dd2a7b;
+}
+
+.about_us{
+    margin: 50px;
+}
+.about_us h4{
+    font-size: 1.45em;
+    padding: 0px 10px;
+    color: #120f5e;
+}
+.about_us h5{
+    color: #1c1a3a;
+    font-weight: 900;
+    padding-bottom: 10px 0px 20px 0px;
+}
+
+@media screen and (max-width: 700px) {
+    footer,nav{
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .flex-align-right{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .class1,.class2,.class3{
+        text-align: center;
+        background-color: lightblue;
+        width: 29%;
+        height: 550px;
+        margin:2%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class2{
+        background-color: lightpink;
+    }
+
+    .class4,.class5{
+        text-align: center;
+        background-color: lightblue;
+        width: 23%;
+        height: 500px;
+        margin: 1%;
+        margin-top: 2%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class5{
+        background-color: lightpink;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .class1,.class2,.class3{
+        text-align: center;
+        background-color: lightblue;
+        width: 30.2%;
+        height: 570px;
+        margin:1.5%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class2{
+        background-color: lightpink;
+    }
+
+    .class4,.class5{
+        text-align: center;
+        background-color: lightblue;
+        width: 23%;
+        height: 540px;
+        margin: 1%;
+        margin-top: 2%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class5{
+        background-color: lightpink;
+    }
+
+    .class4 a,.class5 a{
+        background-color: rgb(88, 68, 68);
+        font-weight: bold;
+        color: white;
+        padding: 7px 40px;
+        border-radius: 1.5px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .class1,.class2,.class3{
+        text-align: center;
+        background-color: lightblue;
+        width: 45%;
+        height: 540px;
+        margin:2.5%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class2{
+        background-color: lightpink;
+    }
+
+    .class4,.class5{
+        text-align: center;
+        background-color: lightblue;
+        width: 30%;
+        height: 530px;
+        margin: 1.5%;
+        margin-top: 2%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class5{
+        background-color: lightpink;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .class1,.class2,.class3{
+        text-align: center;
+        background-color: lightblue;
+        width: 45%;
+        height: 570px;
+        margin:2.5%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class2{
+        background-color: lightpink;
+    }
+
+    .class4,.class5{
+        text-align: center;
+        background-color: lightblue;
+        width: 31%;
+        height: 560px;
+        margin: 1%;
+        margin-top: 2%;
+        border-radius: 3px;
+        padding: 10px;
+    }
+
+    .class5{
+        background-color: lightpink;
+    }
+
+    .class4 a,.class5 a{
+        background-color: rgb(88, 68, 68);
+        font-weight: bold;
+        color: white;
+        padding: 5px 30px;
+        border-radius: 1.5px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .class1,.class2,.class3{
+        text-align: center;
+        background-color: lightblue;
+        width: 91%;
+        height: 500px;
+        margin:4%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class2{
+        background-color: lightpink;
+    }
+
+    .class4,.class5{
+        text-align: center;
+        background-color: lightblue;
+        width: 48%;
+        height: 520px;
+        margin: 1%;
+        margin-top: 2%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class5{
+        background-color: lightpink;
+    }
+
+    .class4 a,.class5 a{
+        background-color: rgb(88, 68, 68);
+        font-weight: bold;
+        color: white;
+        padding: 8px 40px;
+        border-radius: 1px;
+    }
+
+    .sm-handle a{
+        background-color: rgb(125 125 125 / 25%);
+        padding: 6px 10px;
+        border-radius: 30px;
+        margin: 2px 5px;
+        text-decoration: none;
+        font-size: 0.80em;
+    }
+    
+    .sm-handle a i{
+        margin: 2px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .class1,.class2,.class3{
+        text-align: center;
+        background-color: lightblue;
+        width: 92%;
+        height: 500px;
+        margin:3%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class2{
+        background-color: lightpink;
+    }
+
+    .class4,.class5{
+        text-align: center;
+        background-color: lightblue;
+        width: 93%;
+        height: 425px;
+        margin: 3%;
+        margin-top: 2%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class5{
+        background-color: lightpink;
+    }
+
+    .class4 a,.class5 a{
+        background-color: rgb(88, 68, 68);
+        font-weight: bold;
+        color: white;
+        padding: 8px 40px;
+        border-radius: 1px;
+    }
+}
+
+
+@media only screen and (max-width:420px){
+    section h1 span{
+        background-color: rgb(170, 170, 59);
+        padding: 8px 35px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    .class1,.class2,.class3{
+        text-align: center;
+        background-color: lightblue;
+        width: 92%;
+        height: 520px;
+        margin:3%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class2{
+        background-color: lightpink;
+    }
+
+    .class4,.class5{
+        text-align: center;
+        background-color: lightblue;
+        width: 93%;
+        height: 425px;
+        margin: 3%;
+        margin-top: 2%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class5{
+        background-color: lightpink;
+    }
+
+    .class4 a,.class5 a{
+        background-color: rgb(88, 68, 68);
+        font-weight: bold;
+        color: white;
+        padding: 8px 40px;
+        border-radius: 1px;
+    }
+
+    .sm-handle a{
+        background-color: rgb(125 125 125 / 25%);
+        padding: 2px 5px;
+        border-radius: 10px;
+        margin: 1px 3px;
+        text-decoration: none;
+        font-size: 0.60em;
+    }
+    
+    .sm-handle a i{
+        margin: 1px;
+    }
+}
+
+@media only screen and (max-width:380px){
+    section h1 span{
+        background-color: rgb(170, 170, 59);
+        padding: 5px 35px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .recm{
+        background-color: rgb(170, 170, 59);
+        padding: 5px 5px;
+        border-radius: 5px;
+        color: white;
+    }
+    
+    .class1,.class2,.class3{
+        text-align: center;
+        background-color: lightblue;
+        width: 92%;
+        height: 590px;
+        margin:3%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class2{
+        background-color: lightpink;
+    }
+
+    .class4,.class5{
+        text-align: center;
+        background-color: lightblue;
+        width: 93%;
+        height: 480px;
+        margin: 3%;
+        margin-top: 2%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class5{
+        background-color: lightpink;
+    }
+
+    .class4 a,.class5 a{
+        background-color: rgb(88, 68, 68);
+        font-weight: bold;
+        color: white;
+        padding: 8px 40px;
+        border-radius: 1px;
+    }
+}
+
+@media only screen and (max-width:300px){
+    section h1 span{
+        background-color: rgb(170, 170, 59);
+        padding: 5px 35px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .recm{
+        background-color: rgb(170, 170, 59);
+        padding: 5px 5px;
+        border-radius: 5px;
+        color: white;
+    }
+    
+    .class1,.class2,.class3{
+        text-align: center;
+        background-color: lightblue;
+        width: 92%;
+        height: 570px;
+        margin:3%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class2{
+        background-color: lightpink;
+    }
+
+    .class4,.class5{
+        text-align: center;
+        background-color: lightblue;
+        width: 93%;
+        height: 480px;
+        margin: 3%;
+        margin-top: 2%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .class5{
+        background-color: lightpink;
+    }
+
+    .class4 a,.class5 a{
+        background-color: rgb(88, 68, 68);
+        font-weight: bold;
+        color: white;
+        padding: 8px 40px;
+        border-radius: 1px;
+    }
+}
